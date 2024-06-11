@@ -15,7 +15,7 @@ export const Home = () => {
       const [currentText, setCurrentText] = useState('');
       const [currentWordIndex, setCurrentWordIndex] = useState(0);
       const [isErasing, setIsErasing] = useState(false);
-      const [typingSpeed, setTypingSpeed] = useState(50); // Adjust speed in milliseconds
+      const [typingSpeed, setTypingSpeed] = useState(60); // Adjust speed in milliseconds
       // ...
    
 
@@ -62,7 +62,7 @@ export const Home = () => {
    
 
                <HeroHighlight>
-                  <div id='home' className='overflow-hidden dark:bg-black bg-white w-full pt-24'>
+                  <div id='home' className='overflow-hidden bg-black w-full pt-24'>
                      <div className='flex items-center flex-col mt-[-100]'>
                         <h1 className='text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold'>
                            Hi! I&apos;m Rahul
@@ -93,7 +93,7 @@ export const Home = () => {
                      </div>
                      <div className='w-full flex flex-wrap items-center justify-center gap-x-6'>
                         <CardContainer className='inter-var'>
-                           <CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border'>
+                           <CardBody className='bg-gray-50 relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border'>
                               <div className='flex gap-2'>
                                  <CardItem
                                     translateZ='50'
@@ -109,7 +109,7 @@ export const Home = () => {
                                  <CardItem
                                     as='p'
                                     translateZ='60'
-                                    className='text-neutral-500 max-w-sm dark:text-neutral-300 my-auto'
+                                    className='max-w-sm text-neutral-300 my-auto'
                                  >
                                     <p className='text-xl font-bold'>Software Development</p>
                                  </CardItem>
@@ -142,16 +142,15 @@ export const Home = () => {
                               <CardItem
                                  translateZ={50}
                                  as={'div'}
-                                 href='https://twitter.com/mannupaaji'
                                  target='__blank'
-                                 className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white mt-4'
+                                 className='px-4 py-2 rounded-xl text-xs font-normal text-white mt-4'
                               >
                                  Tech Stack → Git, Docker, Firebase, Vercel, Render
                               </CardItem>
                            </CardBody>
                         </CardContainer>
                         <CardContainer className='inter-var'>
-                           <CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
+                           <CardBody className='bg-gray-50 relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
                               <div className='flex gap-2'>
                                  <CardItem
                                     translateZ='50'
@@ -167,7 +166,7 @@ export const Home = () => {
                                  <CardItem
                                     as='p'
                                     translateZ='60'
-                                    className='text-neutral-500 max-w-sm dark:text-neutral-300 my-auto'
+                                    className='max-w-sm text-neutral-300 my-auto'
                                  >
                                     <p className='text-xl font-bold'>Frontend Development</p>
                                  </CardItem>
@@ -202,14 +201,14 @@ export const Home = () => {
                                  as={'div'}
                                  href='https://twitter.com/mannupaaji'
                                  target='__blank'
-                                 className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white mt-4'
+                                 className='px-4 py-2 rounded-xl text-xs font-normal text-white mt-4'
                               >
                                  Tech Stack → React.js, Next.js, Redux Toolkit, Tailwind CSS
                               </CardItem>
                            </CardBody>
                         </CardContainer>
                         <CardContainer className='inter-var'>
-                           <CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
+                           <CardBody className='bg-gray-50 relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
                               <div className='flex gap-2'>
                                  <CardItem
                                     translateZ='50'
@@ -225,7 +224,7 @@ export const Home = () => {
                                  <CardItem
                                     as='p'
                                     translateZ='60'
-                                    className='text-neutral-500 max-w-sm dark:text-neutral-300 my-auto'
+                                    className='max-w-sm text-neutral-300 my-auto'
                                  >
                                     <p className='text-xl font-bold'>Backend Development</p>
                                  </CardItem>
@@ -259,7 +258,7 @@ export const Home = () => {
                                  as={'div'}
                                  href='https://twitter.com/mannupaaji'
                                  target='__blank'
-                                 className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white mt-4'
+                                 className='px-4 py-2 rounded-xl text-xs font-normal text-white mt-4'
                               >
                                  Tech Stack → Node.js, Express.js, Spring Boot, MongoDB, MySQL,
                                  Postgres
@@ -282,7 +281,7 @@ export const Home = () => {
                      </div>
                      <div className='w-full m-10'>
                         <CardContainer className='inter-var m-5'>
-                           <CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
+                           <CardBody className='bg-gray-50 relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
                               <div className='flex gap-2'>
                                  <CardItem
                                     translateZ='50'
@@ -298,7 +297,7 @@ export const Home = () => {
                                  <CardItem
                                     as='p'
                                     translateZ='60'
-                                    className='text-neutral-500 max-w-sm dark:text-neutral-300 flex flex-col  gap-0'
+                                    className='max-w-sm text-neutral-300 flex flex-col  gap-0'
                                  >
                                     <p className='text-lg font-semibold'>Intern</p>
                                     <p className='text-xs'>Incture . Internship</p>
@@ -334,9 +333,8 @@ export const Home = () => {
                                  <CardItem
                                     translateZ={50}
                                     as={'div'}
-                                    href='https://twitter.com/mannupaaji'
                                     target='__blank'
-                                    className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white'
+                                    className='px-4 py-2 rounded-xl text-xs font-normal text-white'
                                  >
                                     Tech Stack →
                                  </CardItem>
