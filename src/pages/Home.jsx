@@ -6,9 +6,51 @@ import { MacbookScroll } from '../components/ui/macbook-scroll';
 import { FlipWords } from '../components/ui/flip-words';
 import { Navbar } from '../components/Navbar';
 import { TextRevealCardPreview } from '../components/ui/text-reveal-card';
+import { useEffect, useState } from 'react';
 
 export const Home = () => {
-   const words1 = ['Developer', 'Engineer', 'Coder'];
+
+   
+      const words = ['Developer', 'Engineer', 'Coder'];
+      const [currentText, setCurrentText] = useState('');
+      const [currentWordIndex, setCurrentWordIndex] = useState(0);
+      const [isErasing, setIsErasing] = useState(false);
+      const [typingSpeed, setTypingSpeed] = useState(50); // Adjust speed in milliseconds
+      // ...
+   
+
+    useEffect(() => {
+      let timeout;
+    
+      const typeText = () => {
+        if (isErasing) {
+          // Erase text
+          timeout = setTimeout(() => {
+            setCurrentText((prevText) => prevText.slice(0, -1));
+          }, typingSpeed);
+        } else {
+          // Type text
+          timeout = setTimeout(() => {
+            setCurrentText((prevText) => prevText + words[currentWordIndex][prevText.length]);
+          }, typingSpeed);
+        }
+      };
+    
+      const handleTyping = () => {
+        typeText();
+    
+        if (!isErasing && currentText === words[currentWordIndex]) {
+          setIsErasing(true);
+        } else if (isErasing && currentText === '') {
+          setIsErasing(false);
+          setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+        }
+      };
+    
+      timeout = setTimeout(handleTyping, typingSpeed);
+    
+      return () => clearTimeout(timeout);
+    }, [currentText, isErasing, currentWordIndex, typingSpeed, words]);
 
    return (
       <>
@@ -17,14 +59,7 @@ export const Home = () => {
                <Navbar />
             </div>
             <div className='flex flex-col h-full bg-black'>
-               {/* <div
-               size={'lg'}
-               className='p-8 mb-8 md:mb-0 text-2xl w-full sm:w-fit border-t-2 rounded-full border-[#4D4D4D] bg-[#1F1F1F] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500'
-            >
-               <span className='bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center font-sans group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black'>
-                  Start For Free Today
-               </span>
-            </div> */}
+   
 
                <HeroHighlight>
                   <div id='home' className='overflow-hidden dark:bg-black bg-white w-full pt-24'>
@@ -35,8 +70,8 @@ export const Home = () => {
                         <h1 className='text-3xl md:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-medium'>
                            a passionate
                         </h1>
-                        <div className='text-5xl md:text-8xl font-medium mx-auto text-neutral-400 '>
-                           <FlipWords words={words1} />
+                        <div className='text-5xl md:text-8xl font-medium mx-auto text-neutral-400 mb-5'>
+                           {currentText}
                         </div>
                      </div>
                      <MacbookScroll
