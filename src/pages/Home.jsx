@@ -70,9 +70,10 @@ export const Home = () => {
                         <h1 className='text-3xl md:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-medium'>
                            a passionate
                         </h1>
-                        <div className='text-5xl md:text-8xl font-medium min-h-5rem mx-auto text-neutral-400 mb-5'>
-                           {currentText || ' '}
-                        </div>
+                       <div className='text-5xl md:text-8xl font-medium min-h-[100px] mx-auto text-neutral-400 mb-5'>
+   {currentText}
+</div>
+
                      </div>
                      <MacbookScroll
                         src={`https://images.unsplash.com/photo-1603314585442-ee3b3c16fbcf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
