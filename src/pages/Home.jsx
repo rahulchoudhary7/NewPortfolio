@@ -71,7 +71,7 @@ export const Home = () => {
                            a passionate
                         </h1>
                         <div className='text-5xl md:text-8xl font-medium mx-auto text-neutral-400 mb-5'>
-                           {currentText}
+                           {currentText || ' '}
                         </div>
                      </div>
                      <MacbookScroll
