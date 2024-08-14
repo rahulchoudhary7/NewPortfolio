@@ -68,12 +68,12 @@ export const Navbar = () => {
             >
                Contact
             </button>
-            <a>
+            <a
                href={resumeLink}
                target="_blank"
                rel="noopener noreferrer"
                className="text-base font-normal cursor-pointer my-2"
-            
+            >
                Resume
             </a>
          </div>
@@ -111,12 +111,12 @@ export const Navbar = () => {
               >
                  Contact
               </button>
-              <a>
+              <a
                  href={resumeLink}
                  target="_blank"
                  rel="noopener noreferrer"
                  className='text-base md:text-lg font-normal cursor-pointer'
-              
+              >
                  Resume
               </a>
            </div>
