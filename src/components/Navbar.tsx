@@ -68,7 +68,7 @@ export const Navbar = () => {
             >
                Contact
             </button>
-            
+            <a>
                href={resumeLink}
                target="_blank"
                rel="noopener noreferrer"
@@ -111,7 +111,7 @@ export const Navbar = () => {
               >
                  Contact
               </button>
-              
+              <a>
                  href={resumeLink}
                  target="_blank"
                  rel="noopener noreferrer"
