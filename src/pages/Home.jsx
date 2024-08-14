@@ -364,26 +364,27 @@ export const Home = () => {
                      </div>
                      <div className='w-[80%] flex flex-wrap items-center justify-center'>
                         <div className='h-full flex items-center justify-center mt-20'>
-                           <PinContainer title='ongoing' href=''>
-                              <div className='flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] '>
-                                 <h3 className='max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100'>
-                                    Swayam
-                                 </h3>
-                                 <div className='text-base !m-0 !p-0 font-normal'>
-                                    <span className='text-slate-500 text-xs font-semibold '>
-                                       Building a B2C SaaS with custom integrations for Google
-                                       Drive, Slack, Discord, Notion, Stripe, drag-and-drop builder,
-                                       automation flows,and infinite canvas.
-                                    </span>
-                                 </div>
-                                 {/* <div className='flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500' /> */}
-                                 <img
-                                    src='https://firebasestorage.googleapis.com/v0/b/rahul-mern-blog.appspot.com/o/Screenshot%20(246).png?alt=media&token=07ae666e-9763-4a53-9f86-1f32ea1c93a6'
-                                    alt='cover image'
-                                    className='mt-5'
-                                 />
-                              </div>
-                           </PinContainer>
+                          <PinContainer title='Milestone Project' href=''>
+  <div className='flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]'>
+    <h3 className='max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100'>
+      Project Management App
+    </h3>
+    <div className='text-base !m-0 !p-0 font-normal'>
+      <span className='text-slate-500 text-xs font-semibold'>
+        Engineered a comprehensive project management app with workspaces, 
+        boards, lists, and cards using Next.js 14, Prisma, and PostgreSQL. 
+        Integrated Stripe for payment processing and implemented role-based 
+        access control for enhanced security.
+      </span>
+    </div>
+    <img
+      src='https://firebasestorage.googleapis.com/v0/b/rahul-mern-blog.appspot.com/o/Screenshot%202024-08-14%20123218.png?alt=media&token=96c3d48b-ed86-42e8-9374-d006f3127a42'
+      alt='Milestone Project Cover'
+      className='mt-5'
+    />
+  </div>
+</PinContainer>
+
                         </div>
                         <div className='h-full w-auto flex items-center justify-center mt-20'>
                            <PinContainer
