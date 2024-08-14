@@ -70,7 +70,7 @@ export const Home = () => {
                         <h1 className='text-3xl md:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-medium'>
                            a passionate
                         </h1>
-                        <div className='text-5xl md:text-8xl font-medium mx-auto text-neutral-400 mb-5'>
+                        <div className='text-5xl md:text-8xl font-medium min-h-5rem mx-auto text-neutral-400 mb-5'>
                            {currentText || ' '}
                         </div>
                      </div>
