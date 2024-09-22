@@ -10,7 +10,7 @@ export const Navbar = () => {
    };
 
    const resumeLink =
-      'https://drive.google.com/file/d/1A6u2AcfP_ehNFK0ULyVsSgqh9A9T67LQ/view?usp=drive_link';
+      'https://drive.google.com/file/d/1vuf0tb_GyD822D9cSDhPjaObLOCA09u6/view?usp=sharing';
 
    return (
       <>
