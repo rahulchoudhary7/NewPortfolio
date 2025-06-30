@@ -280,69 +280,71 @@ export const Home = () => {
                         <div className='absolute inset-x-4 sm:inset-x-10 md:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[2px] sm:h-[5px] blur-sm' />
                         <div className='absolute inset-x-4 sm:inset-x-10 md:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px' />
                      </div>
-                     <div id='experience' className='flex flex-col items-center pt-24'>
-  <h1 className='md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20'>
-    Experience
-  </h1>
-  <div className='w-[80%] max-w-[40rem] h-full relative'>
-    <div className='absolute inset-x-2 sm:inset-x-5 md:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[1px] sm:h-[2px] blur-sm' />
-    <div className='absolute inset-x-2 sm:inset-x-5 md:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px' />
-    <div className='absolute inset-x-4 sm:inset-x-10 md:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[2px] sm:h-[5px] blur-sm' />
-    <div className='absolute inset-x-4 sm:inset-x-10 md:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px' />
-  </div>
-  <div className='w-full m-10'>
-    <CardContainer className='inter-var m-5'>
-      <CardBody className='bg-gray-50 relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border'>
-        <div className='flex gap-2'>
-          <CardItem
-            translateZ='50'
-            className='bg-white flex items-center justify-center w-14 h-14 '
-          >
-            <img
-              src='https://incture.com/wp-content/uploads/2022/02/Incture-Logo-Blue-150x34-px.svg'
-              alt='Incture Logo'
-              className='p-1'
-            />
-          </CardItem>
+                     <div className='w-full m-10'>
+                        <CardContainer className='inter-var m-5'>
+                           <CardBody className='bg-gray-50 relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
+                              <div className='flex gap-2'>
+                                 <CardItem
+                                    translateZ='50'
+                                    className='bg-white flex items-center justify-center w-14 h-14 '
+                                 >
+                                    <img
+                                       src='https://incture.com/wp-content/uploads/2022/02/Incture-Logo-Blue-150x34-px.svg'
+                                       alt=''
+                                       className='p-1'
+                                    />
+                                 </CardItem>
 
-          <CardItem
-            as='p'
-            translateZ='60'
-            className='max-w-sm text-neutral-300 flex flex-col gap-0'
-          >
-            <p className='text-lg font-semibold'>Associate Software Engineer</p>
-            <p className='text-xs'>Incture Technologies</p>
-            <p className='text-xs'>July 2024 – Present</p>
-          </CardItem>
-        </div>
-
-        <CardItem translateZ='80' className='w-full mt-4 text-white bg-white/10'>
-          <div className='p-4'>
-            • Developed and optimized REST APIs with Java and Spring Boot, reducing data processing time by 35%.<br /><br />
+                                 <CardItem
+                                    as='p'
+                                    translateZ='60'
+                                    className='max-w-sm text-neutral-300 flex flex-col  gap-0'
+                                 >
+                                    <p className='text-lg font-semibold'>Associate Software Engineer</p>
+                                    <p className='text-xs'>Incture . Internship</p>
+                                    <p className='text-xs'>Jul 2024 - Present</p>
+                                 </CardItem>
+                              </div>
+                              <CardItem
+                                 translateZ='80'
+                                 className='w-full mt-4 text-white bg-white/10'
+                              >
+                                 {/* <img
+                                 src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                                 height='1000'
+                                 width='1000'
+                                 className='h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl'
+                                 alt='thumbnail'
+                              /> */}
+                                 <div className='p-4'>
+                                   • Developed and optimized REST APIs with Java and Spring Boot, reducing data processing time by 35%.<br /><br />
             • Enhanced frontend performance by 40% using React and optimized state management.<br /><br />
             • Improved response times by 50% using Redis caching and PostgreSQL query optimization.<br /><br />
             • Implemented testing strategies with Jest and JUnit, achieving 85% code coverage and reducing bugs by 40%.<br /><br />
             • Contributed to system architecture decisions, improving scalability and tech stack adoption.
-          </div>
-        </CardItem>
-
-        <div className='flex flex-col justify-between items-center mt-5'>
-          <CardItem
-            translateZ={50}
-            as='div'
-            target='__blank'
-            className='px-4 py-2 rounded-xl text-xs font-normal text-white'
-          >
-            Tech Stack → Java, Spring Boot, React.js, PostgreSQL, Redis, Jest, JUnit
-          </CardItem>
-          <CardItem translateZ={60} as='button' className='px-4 py-2 rounded-xl mx-auto'>
-            <AnimatedTooltipPreview />
-          </CardItem>
-        </div>
-      </CardBody>
-    </CardContainer>
-  </div>
-</div>
+                                 </div>
+                              </CardItem>
+                              <div className='flex flex-col justify-between items-center mt-5'>
+                                 <CardItem
+                                    translateZ={50}
+                                    as={'div'}
+                                    target='__blank'
+                                    className='px-4 py-2 rounded-xl text-xs font-normal text-white'
+                                 >
+                                    Tech Stack →
+                                 </CardItem>
+                                 <CardItem
+                                    translateZ={60}
+                                    as='button'
+                                    className='px-4 py-2 rounded-xl mx-auto'
+                                 >
+                                    <AnimatedTooltipPreview />
+                                 </CardItem>
+                              </div>
+                           </CardBody>
+                        </CardContainer>
+                     </div>
+                  </div>
 
                   <div id='projects' className='flex flex-col items-center pt-24'>
                      <h1 className='md:text-7xl text-3xl lg:text-7xl font-bold text-center text-white relative z-20'>
